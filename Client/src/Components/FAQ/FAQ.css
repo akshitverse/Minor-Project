@@ -1,0 +1,131 @@
+.faq-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgb(249, 249, 249);
+    color: #fff;
+}
+
+.faq-section h2 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0);
+}
+
+.faq-section p {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Center the FAQ items */
+}
+
+.faq-item {
+    margin: 10px;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    width: 60%; /* Default width for FAQ boxes */
+}
+
+/* Adjusting the left side boxes to be shorter */
+.faq-item.left-side {
+    width: 45%; /* Shorter width for left side */
+}
+
+/* Adjusting the right side boxes to be more compact */
+.faq-item.right-side {
+    width: 50%; /* Slightly more compact right side */
+}
+
+.faq-item.active {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question .plus-minus {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .faq-list {
+        gap: 10px;
+    }
+
+    .faq-section {
+        padding: 10px;
+    }
+
+    .faq-item {
+        margin: 5px;
+        padding: 10px;
+        width: 80%; /* Make all items slightly wider on smaller screens */
+    }
+
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 5px;
+    }
+
+    .faq-item {
+        margin: 3px;
+        padding: 8px;
+        width: 90%; /* Make items even wider on very small screens */
+    }
+
+    .faq-section h2 {
+        font-size: 24px;
+    }
+
+    .faq-section p {
+        font-size: 12px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,83 @@
+/* Main container styling */
+.privacy-container {
+    padding: 60px 40px; /* Increased padding for better spacing */
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    background: #fff; /* White background for the container */
+    color: #000; /* Black text */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+    line-height: 1.6;
+}
+
+/* Adding a white background to the body */
+body {
+    background-color: #fff; /* White background for the body */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+}
+
+/* Title styling */
+.privacy-container h1 {
+    text-align: center;
+    font-size: 56px; /* Increased title size for a bold appearance */
+    color: #000; /* Black text */
+    margin-bottom: 40px; /* Space below the title */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 5px; /* Increased letter spacing for emphasis */
+}
+
+/* Section heading styling */
+.privacy-container h2 {
+    font-size: 28px; /* Slightly larger section headings */
+    color: #000; /* Black text for section headings */
+    margin-top: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; /* Underline effect */
+    padding-bottom: 10px; /* Space between heading and text */
+}
+
+/* Paragraph styling */
+.privacy-container p {
+    font-size: 18px; /* Standard paragraph size */
+    color: #000; /* Black text for paragraphs */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+/* Responsive design for tablets and smaller devices */
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .privacy-container h1 {
+        font-size: 34px; /* Smaller title size */
+    }
+
+    .privacy-container h2 {
+        font-size: 24px; /* Smaller section headings */
+    }
+
+    .privacy-container p {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .privacy-container h1 {
+        font-size: 28px; /* Further decrease title size */
+    }
+
+    .privacy-container h2 {
+        font-size: 20px; /* Further decrease section headings */
+    }
+
+    .privacy-container p {
+        font-size: 14px; /* Further decrease paragraph size */
+    }
+}

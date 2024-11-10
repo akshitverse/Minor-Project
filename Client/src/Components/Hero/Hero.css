@@ -1,0 +1,89 @@
+/* Overlay to provide white background at the start */
+.hero-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 100; /* Overlay above all content */
+  opacity: 1;
+  transition: opacity 1s ease; /* Fade out over 2 seconds */
+}
+
+/* Fade out the overlay to reveal the hero content */
+.hero-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Ignore clicks when invisible */
+}
+
+.hero-container {
+  position: relative;
+  height: calc(100vh - 70px); /* Adjust based on navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.85;
+  transform: scale(1);
+  transition: transform 8s ease-in-out, opacity 3s ease; /* Slow zoom and fade effect */
+}
+
+.hero-background[data-aos="fade-zoom-in"] {
+  transform: scale(1.1); /* Slow zoom-in effect */
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+/* Control buttons */
+.control-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.control-btn.left {
+  left: 10px;
+}
+
+.control-btn.right {
+  right: 10px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #c4c4c4;
+}

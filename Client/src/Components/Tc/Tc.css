@@ -1,0 +1,106 @@
+/* Main container styling */
+.terms-container {
+    padding: 60px 40px; /* Increased padding for better spacing */
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+    line-height: 1.6;
+  }
+  
+  /* Adding a light grey background to the entire page */
+  body {
+    background-color: #f9f9f9; /* Soft light grey background for contrast */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  }
+  
+  /* Title styling */
+  .terms-container h1 {
+    text-align: center;
+    font-size: 56px; /* Increased title size */
+    color: #000; /* Black text for title */
+    margin-bottom: 40px; /* Space below the title */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 5px; /* Increased letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    font-family: 'Georgia', serif; /* Changed to serif font */
+  }
+  
+  /* Section heading styling */
+  .terms-container h2 {
+    font-size: 28px; /* Slightly larger section headings */
+    color: #000; /* Black text for section headings */
+    margin-top: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; /* Underline effect */
+    padding-bottom: 10px; /* Space between heading and text */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .terms-container h2:hover {
+    color: #2980b9; /* Change color on hover */
+  }
+  
+  /* Paragraph styling */
+  .terms-container p {
+    font-size: 18px; /* Standard paragraph size */
+    color: #000; /* Black text for paragraphs */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+  }
+  
+  /* List styling */
+  .terms-container ul {
+    padding-left: 40px; /* Indentation for lists */
+    margin-bottom: 20px;
+  }
+  
+  .terms-container ul li {
+    list-style-type: circle; /* Circle bullet points */
+    font-size: 18px; /* Standard list item size */
+    color: #000; /* Black text for list items */
+    padding: 8px 0; /* Space between list items */
+  }
+  
+  /* Responsive design for tablets and smaller devices */
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 30px; /* Adjust padding for smaller screens */
+      margin: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .terms-container h1 {
+      font-size: 34px; /* Smaller title size */
+    }
+  
+    .terms-container h2 {
+      font-size: 24px; /* Smaller section headings */
+    }
+  
+    .terms-container p,
+    .terms-container ul li {
+      font-size: 16px; /* Smaller paragraph and list item size */
+    }
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 480px) {
+    .terms-container h1 {
+      font-size: 28px; /* Further decrease title size */
+    }
+  
+    .terms-container h2 {
+      font-size: 20px; /* Further decrease section headings */
+    }
+  
+    .terms-container p,
+    .terms-container ul li {
+      font-size: 14px; /* Further decrease paragraph and list item size */
+    }
+  }
+  

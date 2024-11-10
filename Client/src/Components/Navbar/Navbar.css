@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a4848;
+  padding: 10px 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navbar-logo a:hover {
+  color: white;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 0 20px;
+}
+
+.navbar-links2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-block: 10px;
+  margin-top: 14px;
+  padding: 0 20px;
+}
+
+.navbar-links li {
+  margin: 0 8px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links2 a {
+  text-decoration: none;
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Navbar Icons */
+.navbar-links2 a:hover,
+.navbar-links a:hover {
+  color: #ffffff;
+}
+
+/* Hamburger Icon for Mobile */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  font-size: 28px;
+  color: #c9c9c9;
+}
+
+/* Mobile Menu Styling */
+.mobile-menu-icons {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  background-color: #4a4848;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.mobile-menu-icons a {
+  margin: 10px 0;
+  color: #c9c9c9;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-icons a:hover {
+  color: white;
+}
+
+/* Mobile View Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-links2 {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links2 li {
+    margin-left: 20px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icons.active {
+    display: flex;
+  }
+}
+
+/* For small screens */
+@media screen and (max-width: 480px) {
+  .logo-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-links a, .navbar-links2 a {
+    font-size: 12px;
+  }
+
+  .navbar-links li {
+    padding: 8px 0;
+  }
+
+  .navbar-links2 li {
+    margin-left: 10px;
+  }
+}
