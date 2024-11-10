@@ -20,14 +20,14 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'accesszone79@gmail.com',
-        pass: 'accesszone123',
+        pass: 'ftmy tvdc ehzg qyfs',
     }
 });
 
 // Sign up API
 app.post('/', async (req, res) => {
     const { name, email, password } = req.body;
-
+  
     try {
         const newUser = new User({ name, email, password });
         const savedUser = await newUser.save();
