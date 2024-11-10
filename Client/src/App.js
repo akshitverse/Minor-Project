@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter , Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
@@ -15,25 +15,21 @@ import FAQ from './Components/FAQ/FAQ';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/featured" element={<Featured/>} />
-          <Route path="/newarrived" element={<Newarrived/>} />
-          <Route path="/mostselled" element={<Mostselled/>} />
-          <Route path="/todaydeal" element={<Todaydeal/>} />
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/FAQ" element={<FAQ/>}/>
-          <Route path="/terms" element={<Tc/>}/>
-          <Route path="/privacy" element={<PrivacyPolicy/>} />
-        </Routes>
-        <Footer />
-      </div>
+    <Router>  {/* Use only BrowserRouter */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/featured" element={<Featured />} />
+        <Route path="/newarrived" element={<Newarrived />} />
+        <Route path="/mostselled" element={<Mostselled />} />
+        <Route path="/todaydeal" element={<Todaydeal />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/terms" element={<Tc />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+      <Footer />
     </Router>
-    </BrowserRouter>
   );
 }
 
