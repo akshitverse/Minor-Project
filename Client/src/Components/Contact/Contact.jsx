@@ -33,7 +33,7 @@ function Contact() {
     const { firstname, lastname, email, phoneNumber, message } = formData;
 
     try {
-      const response = await fetch('http://localhost:3001/contact', {
+      const response = await fetch('http://localhost:3000/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

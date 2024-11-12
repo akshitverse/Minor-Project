@@ -61,7 +61,7 @@ body {
   text-decoration: none;
   color: #c9c9c9;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
@@ -137,7 +137,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-  }
+  }0
 
   .navbar-links2 {
     justify-content: flex-start;

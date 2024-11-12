@@ -45,20 +45,20 @@ const Navbar = () => {
         <ul className="navbar-links2">
           <li>
             <a href="#search" aria-label="Search">
-              <Search size={18} />
-              <span className="sr-only">Search</span>
+              <Search size={21} />
+              <span className="sr-only"></span>
             </a>
           </li>
           <li>
             <a href="#cart" onClick={handleCartClick} aria-label="Shopping Cart">
-              <ShoppingCart size={18} />
-              <span className="sr-only">Cart</span>
+              <ShoppingCart size={21} />
+              <span className="sr-only"></span>
             </a>
           </li>
           <li>
             <a href="#user-account" aria-label="User Account">
-              <UserRound size={18} />
-              <span className="sr-only">Account</span>
+              <UserRound size={21} />
+              <span className="sr-only"></span>
             </a>
           </li>
         </ul>

@@ -1,0 +1,41 @@
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: #333;
+}
