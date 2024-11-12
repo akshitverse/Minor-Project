@@ -27,7 +27,7 @@ const transporter = nodemailer.createTransport({
 // Sign up API
 app.post('/', async (req, res) => {
     const { name, email, password } = req.body;
-
+  
     try {
         const newUser = new User({ name, email, password });
         const savedUser = await newUser.save();
