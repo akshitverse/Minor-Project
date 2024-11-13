@@ -9,7 +9,7 @@ import User from './Config/User.js';
 import Contact from './Config/Contact.js';
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use("/api/admin", adminRoute);
 app.use(cors());
@@ -77,7 +77,7 @@ app.post('/contact', async (req, res) => {
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.log(chalk.red('Error sending email:', error));
+                console.log(chalk.red('Error scd ending email:', error));
                 return res.status(500).json({ alert: 'Data saved, but error occurred while sending email.' });
             }
             console.log('Email sent:', info.response);

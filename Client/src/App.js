@@ -12,21 +12,22 @@ import Mostselled from './Components/Mostselled/Mostselled';
 import Todaydeal from './Components/Todaydeal/Todaydeal';
 import Contact from './Components/Contact/Contact';
 import FAQ from './Components/FAQ/FAQ';
-
+import AboutUs from './Components/AboutUs';
 function App() {
   return (
     <Router>  {/* Use only BrowserRouter */}
       <Navbar />
+      <Hero/>
+      <Featured/>
+      <Mostselled/>
+      <Todaydeal/>
+      <Newarrived/>
+      <FAQ/>
+      <Contact/>
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/featured" element={<Featured />} />
-        <Route path="/newarrived" element={<Newarrived />} />
-        <Route path="/mostselled" element={<Mostselled />} />
-        <Route path="/todaydeal" element={<Todaydeal />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/FAQ" element={<FAQ />} />
         <Route path="/terms" element={<Tc />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>
