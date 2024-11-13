@@ -62,8 +62,8 @@ app.post('/login', async (req, res) => {
 // Contact us API
 app.post('/contact', async (req, res) => {
     try {
-        const { fullname, email, phone, message } = req.body;
-        const { firstname, lastname } = fullname;
+        const { firstname, lastname, email, phone, message } = req.body;
+        const fullname = { firstname, lastname };  
 
         const newContact = new Contact({ fullname, email, phone, message });
         await newContact.save();

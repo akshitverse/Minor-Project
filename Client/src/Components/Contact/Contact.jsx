@@ -39,7 +39,8 @@ function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          fullname: { firstname, lastname },
+          firstname,
+          lastname,
           email,
           phone: phoneNumber,
           message,
