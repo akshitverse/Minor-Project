@@ -79,6 +79,25 @@ body {
   color: #ffffff;
 }
 
+/* Sign In/Sign Up Button */
+.signup-button {
+  background-color: #4a4848; /* Match navbar color */
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #ffffff; /* White on hover */
+  color: #4a4848; /* Navbar color for text on hover */
+}
+
 /* Hamburger Icon for Mobile */
 .mobile-menu-icon {
   display: none;
@@ -137,7 +156,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-  }0
+  }
 
   .navbar-links2 {
     justify-content: flex-start;
@@ -155,6 +174,13 @@ body {
 
   .mobile-menu-icons.active {
     display: flex;
+  }
+
+  .signup-button {
+    padding: 10px 20px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -175,5 +201,10 @@ body {
 
   .navbar-links2 li {
     margin-left: 10px;
+  }
+
+  .signup-button {
+    font-size: 12px;
+    padding: 8px 15px;
   }
 }

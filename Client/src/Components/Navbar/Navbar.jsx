@@ -4,11 +4,13 @@ import pe_logo3 from './logo.jpg';
 import { Search } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 
 const Navbar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate(); // React Router hook for navigation
 
   const handleCartClick = (e) => {
     e.preventDefault();
@@ -17,6 +19,10 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleSignUpClick = () => {
+    navigate('/signup'); // Navigate to signup page
   };
 
   return (
@@ -54,12 +60,22 @@ const Navbar = () => {
               <ShoppingCart size={21} />
               <span className="sr-only"></span>
             </a>
-          </li>
+          </li>  
           <li>
             <a href="#user-account" aria-label="User Account">
               <UserRound size={21} />
               <span className="sr-only"></span>
             </a>
+          </li>
+          <li>
+            <button 
+              className="signup-button" 
+              onClick={handleSignUpClick}
+              aria-label="Sign In/Sign Up"
+              type="button"
+            >
+              Sign In/Sign Up
+            </button>
           </li>
         </ul>
       </nav>
@@ -78,6 +94,13 @@ const Navbar = () => {
         <a href="#user-account" aria-label="User Account">
           <UserRound size={24} />
         </a>
+        <button 
+          className="signup-button" 
+          onClick={handleSignUpClick}
+          aria-label="Sign In/Sign Up"
+        >
+          Sign In/Sign Up
+        </button>
       </div>
     </>
   );
